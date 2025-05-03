@@ -1,28 +1,34 @@
-# 🕒 90MinutesTimer
+🕒 90MinutesTimer
 
-Um timer de **90 minutos com tema Cyberpunk**, perfeito para sessões de estudo profundas e focadas.  
-Inspirado na técnica Pomodoro, mas com durações estendidas para quem busca imersão total.
+A 90-minute Cyberpunk-themed timer, designed for deep, focused study sessions.
+Inspired by the Pomodoro technique, but with extended durations to help you dive into total immersion.
 
 ![screenshot-2025-05-03-18-46-17](https://github.com/user-attachments/assets/8f966ec1-33a2-4d49-a7fb-e02669c95379)
+🚀 Features
 
-## 🚀 Recursos
+    ⏱️ Switches between 90 minutes of focused work and 20 minutes of rest.
 
-- ⏱️ Alternância entre 90 minutos de estudo e 20 minutos de descanso.
-- 🎭 Animações suaves com transições visuais entre os modos.
-- 🎨 Interface com estilo **Cyberpunk minimalista**.
-- 🧠 Ideal para sessões de estudo de alta performance.
-- 🧩 **Sem dependências** — 100% HTML, CSS e JavaScript puro.
+    🎭 Smooth animations with visual transitions between modes.
 
-## 🧰 Como usar
+    🎨 Minimalist Cyberpunk-style interface.
 
-1. Clone ou baixe este repositório.
-2. Abra o arquivo `index.html` em qualquer navegador.
-3. Clique em **Start** para iniciar o cronômetro.
-4. Use os botões **90min** e **20min** para alternar entre os modos.
+    🧠 Perfect for high-performance study sessions.
 
-> 💡 O timer muda automaticamente de "estudo" para "descanso" ao finalizar uma sessão — e vice-versa.
+    🧩 No dependencies — built entirely with plain HTML, CSS, and JavaScript.
 
-## 📁 Estrutura
+🧰 How to Use
+
+    Clone or download this repository.
+
+    Open the index.html file in any modern browser.
+
+    Click Start to begin the timer.
+
+    Use the 90min and 20min buttons to manually switch between modes.
+
+    💡 The timer automatically switches from "study" to "break" when a session ends — and back again.
+
+📁 Project Structure
 
 📁 90MinutesTimer/
 ├── index.html
@@ -34,26 +40,20 @@ Inspirado na técnica Pomodoro, mas com durações estendidas para quem busca im
 ├── buttonChoseTimer.css
 └── timerDiv.css
 
-## 🎨 Estilo
+🎨 Styling
 
-A fonte utilizada é [Orbitron](https://fonts.google.com/specimen/Orbitron), da família digital/futurista.  
-O plano de fundo alterna entre:
+The font used is Orbitron, which fits the digital/futuristic aesthetic.
+Background colors alternate between:
 
-- `#0a1f2c` para o modo **estudo**
-- `#1a0f1f` para o modo **descanso**
+    #0a1f2c for study mode
 
-## 📦 Requisitos
+    #1a0f1f for break mode
 
-Nenhum! Basta abrir o `index.html` em qualquer navegador moderno.  
-Totalmente funcional **offline** e sem instalação.
+📦 Requirements
 
-## 📸 Captura de Tela
+None at all! Just open the index.html file in any up-to-date browser.
+Works fully offline — no installation needed.
+📄 License
 
-![screenshot](https://github.com/user-attachments/assets/8f966ec1-33a2-4d49-a7fb-e02669c95379)
-
-## 📄 Licença
-
-Este projeto é de uso livre para fins pessoais e educacionais.  
-Sinta-se à vontade para modificar ou adaptar!
-
----
+This project is free to use for personal or educational purposes.
+Feel free to modify or adapt it as you wish!
