@@ -1,0 +1,23 @@
+body {
+  background-color: #0a0a0a;
+  padding: 4em;
+  text-align: center;
+  color: #ffffff;
+  font-family: 'Orbitron', monospace;
+  background-image: radial-gradient(
+      circle at top left,
+      #ff00f7 0%,
+      transparent 40%
+    ),
+    radial-gradient(circle at bottom right, #00e5ff 0%, transparent 40%);
+  background-repeat: no-repeat;
+  background-size: 100% 120%;
+  transition: background-color 0.6s ease-in-out;
+}
+button.updated-text,
+h1.updated-text,
+span.updated-text {
+  transform: scale(1.05);
+  text-shadow: 0 0 10px #ff00f7;
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+}

@@ -1,0 +1,15 @@
+h1 {
+  margin-bottom: 6em;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  align-items: center;
+}
+
+.animated-number {
+  font-size: 3rem;
+  transition: color 0.3s ease-in-out;
+}

@@ -1,0 +1,68 @@
+.circle-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+.circle-half {
+  width: 8em;
+  height: 14em;
+  outline: none;
+  border: none;
+  background: #0d0d0d;
+  box-shadow: inset 0 0 10px #00e5ff;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-half.left {
+  border-radius: 90px 5px 5px 90px;
+}
+
+.circle-half.right {
+  border-radius: 5px 90px 90px 5px;
+}
+
+.insideButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+  color: #fff;
+  font-family: 'Orbitron', monospace;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+}
+
+.circle-half svg {
+  width: 40px;
+  height: 40px;
+  fill: currentColor;
+  transition: 0.3s;
+}
+
+.circle-half span {
+  text-align: center;
+  color: currentColor;
+}
+
+.circle-half.left {
+  color: #ff00f7;
+}
+
+.circle-half.right {
+  color: #00e5ff;
+}
+
+.circle-half.left:hover,
+.circle-half.right:hover {
+  transform: scale(1.05);
+  box-shadow: inset 0 0 20px #00e5ff;
+  color: #ffffff;
+}

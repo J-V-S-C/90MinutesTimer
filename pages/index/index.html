@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styleIndex.css" />
+    <link rel="stylesheet" href="../../public/buttonStartTimer.css" />
+    <link rel="stylesheet" href="../../public/buttonChoseTimer.css" />
+    <link rel="stylesheet" href="../../public/globalStyle.css" />
+    <link rel="stylesheet" href="../../public/timerDiv.css" />
+    <link
+      rel="icon"
+      href="https://img.icons8.com/?size=100&id=Qd1srbdHrhiX&format=png&color=000000"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>90Minutes-Timer</title>
+    <h1>90 minutes timer</h1>
+  </head>
+  <body>
+    <div class="main">
+      <div class="timerSpace">
+        <b></b>
+        <div class="content">
+          <p id="timer" class="animated-number">90 : 00</p>
+        </div>
+      </div>
+      <button class="button" id="buttonStart">Start</button>
+      <div class="circle-wrapper">
+        <button class="circle-half left" id="90minutes">
+          <div class="insideButton">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M13 1v3.062A8.004 8.004 0 0 1 19.938 11H23v2h-3.062A8.004 8.004 0 0 1 13 19.938V23h-2v-3.062A8.004 8.004 0 0 1 4.062 13H1v-2h3.062A8.004 8.004 0 0 1 11 4.062V1h2Zm-1 5a6 6 0 1 0 0 12a6 6 0 0 0 0-12Zm-2 6a2 2 0 1 1 4 0a2 2 0 0 1-4 0Z"
+              />
+            </svg>
+            <span>90min</span>
+          </div>
+        </button>
+
+        <button class="circle-half right" id="20minutes">
+          <div class="insideButton">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              viewBox="0 0 48 48"
+            >
+              <mask id="ipSSuccess0">
+                <g
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="4"
+                >
+                  <path
+                    fill="#fff"
+                    stroke="#fff"
+                    d="m24 4l5.253 3.832l6.503-.012l1.997 6.188l5.268 3.812L41 24l2.021 6.18l-5.268 3.812l-1.997 6.188l-6.503-.012L24 44l-5.253-3.832l-6.503.012l-1.997-6.188l-5.268-3.812L7 24l-2.021-6.18l5.268-3.812l1.997-6.188l6.503.012L24 4Z"
+                  />
+                  <path stroke="#000" d="m17 24l5 5l10-10" />
+                </g>
+              </mask>
+              <path
+                fill="currentColor"
+                d="M0 0h48v48H0z"
+                mask="url(#ipSSuccess0)"
+              />
+            </svg>
+
+            <span>20min</span>
+          </div>
+        </button>
+      </div>
+    </div>
+    <script src="scriptIndex.js"></script>
+  </body>
+</html>
