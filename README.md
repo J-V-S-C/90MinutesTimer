@@ -28,18 +28,6 @@ Inspired by the Pomodoro technique, but with extended durations to help you dive
 
     💡 The timer automatically switches from "study" to "break" when a session ends — and back again.
 
-📁 Project Structure
-
-📁 90MinutesTimer/
-├── index.html
-├── scriptIndex.js
-├── styleIndex.css
-└── public/
-├── globalStyle.css
-├── buttonStartTimer.css
-├── buttonChoseTimer.css
-└── timerDiv.css
-
 🎨 Styling
 
 The font used is Orbitron, which fits the digital/futuristic aesthetic.
