@@ -150,4 +150,4 @@ function startAlarmLoop() {
 longTimer.onclick = () => handlePresetClick(90, COLORS.study, 'study');
 shortTimer.onclick = () => handlePresetClick(20, COLORS.rest, 'rest');
 
-setTimer(1, true, 0);
+setTimer(90, true, 0);
