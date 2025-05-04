@@ -1,4 +1,6 @@
-const alarmSound = new Audio('./alarm.mp3');
+const alarmSound = new Audio('./audios/alarm.mp3');
+const buttonCLick = new Audio('./audios/button.mp3');
+const rollingNumbers = new Audio('./audios/rolling.wav');
 const timer = document.getElementById('timer');
 const buttonStart = document.getElementById('buttonStart');
 const longTimer = document.getElementById('90minutes');
@@ -40,6 +42,7 @@ function animateToTime(fromSeconds, toSeconds, duration = 4000) {
   const start = performance.now();
 
   function step(currentTime) {
+    rollingNumbers.play()
     const elapsed = currentTime - start;
     const progress = Math.min(elapsed / duration, 1);
     const eased = easeOut(progress);
@@ -94,6 +97,7 @@ function handleCountdownEnd() {
 }
 
 buttonStart.onclick = () => {
+  buttonCLick.play()
   isRunning = !isRunning;
   animateTextChange(buttonStart, isRunning ? 'Pause' : 'Start');
 
@@ -118,6 +122,7 @@ buttonStart.onclick = () => {
 };
 
 function handlePresetClick(mins, color, mode) {
+  buttonCLick.play()
   currentMode = mode;
   const from = minutes * 60 + seconds;
   setTimer(mins, true, from);
