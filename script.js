@@ -1,3 +1,4 @@
+const alarmSound = new Audio('./alarm.mp3');
 const timer = document.getElementById('timer');
 const buttonStart = document.getElementById('buttonStart');
 const longTimer = document.getElementById('90minutes');
@@ -77,7 +78,8 @@ function setTimer(minuteValue, animate = true, from = null) {
 function handleCountdownEnd() {
   clearInterval(interval);
   isRunning = false;
-
+  startAlarmLoop()
+ 
   if (currentMode === 'study') {
     currentMode = 'rest';
     setTimer(20, true);
@@ -94,6 +96,7 @@ function handleCountdownEnd() {
 buttonStart.onclick = () => {
   isRunning = !isRunning;
   animateTextChange(buttonStart, isRunning ? 'Pause' : 'Start');
+
 
   if (interval) clearInterval(interval);
   if (!isRunning) return;
@@ -122,7 +125,29 @@ function handlePresetClick(mins, color, mode) {
   animateTextChange(buttonStart, isRunning ? 'Pause' : 'Start');
 }
 
+function startAlarmLoop() {
+  alarmSound.loop = true;
+  alarmSound.play();
+
+  const stop = () => {
+    alarmSound.pause();
+    alarmSound.currentTime = 0;
+    alarmSound.loop = false;
+
+    window.removeEventListener('mousemove', stop);
+    window.removeEventListener('keydown', stop);
+    window.removeEventListener('click', stop);
+    window.removeEventListener('touchstart', stop);
+  };
+
+  window.addEventListener('mousemove', stop);
+  window.addEventListener('keydown', stop);
+  window.addEventListener('click', stop);
+  window.addEventListener('touchstart', stop);
+}
+
+
 longTimer.onclick = () => handlePresetClick(90, COLORS.study, 'study');
 shortTimer.onclick = () => handlePresetClick(20, COLORS.rest, 'rest');
 
-setTimer(90, true, 0);
+setTimer(1, true, 0);
